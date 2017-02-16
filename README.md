@@ -1,8 +1,12 @@
-# ZfcBase
+# PixelPinZfcBase
 
 Version 0.0.1 Created by Evan Coury and the ZF-Commons team
+slightly modified by Callum Brankin at PixelPin
 
-[![Build Status](https://secure.travis-ci.org/ZF-Commons/ZfcBase.png?branch=master)](http://travis-ci.org/ZF-Commons/ZfcBase)
+Modifications
+------------
+
+Zfc Base has been modified to use [PixelPinZFCUser](https://github.com/PixelPinPlugins/PixelPin-ZFC-User) and is used by [PixelPin Auth](https://github.com/PixelPinPlugins/PixelPin-Auth).
 
 ## Introduction
 
@@ -15,18 +19,4 @@ that depends on ZfcBase.
 
 * Zend Framework 2
 
-## Installation
 
-Simply clone this project into your `./vendor/` directory and enable it in your
-`./config/application.config.php` file.
-
-Provided Classes
-----------------
-
-* `ZfcBase\Mapper\AbstractDbMapper` - An abstract mapper for Zend\Db that makes
-  using hydrators and custom entities very simple.
-* `ZfcBase\Form\ProvidesEventsForm` - Extends Zend\Form and provides the
-  functionality of `ZfcBase\EventManager\EventProvider` (basically it's a
-  crutch since we can't use traits yet).
-* `ZfcBase\EventManager\EventProvider` - Abstract class that gives extending
-  classes an event manager and related methods.
